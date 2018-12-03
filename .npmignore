@@ -1,0 +1,11 @@
+node_modules/
+doc/
+dest/
+dist/
+build/
+tmp/
+test/
+.git/
+*.swp
+*.swo
+package-lock.json

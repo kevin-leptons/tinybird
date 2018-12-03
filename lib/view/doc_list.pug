@@ -1,0 +1,14 @@
+extends doc_list_layout.pug
+
+block doc-result
+    div(class='search-content')
+        ul(class='list')
+            each item in items
+                li
+                    a(href='/doc/' + item.id)
+                        h2= item.name
+                        ul(class='list-inline')
+                            li= item.birthtime
+                        ul(class='tags')
+                            each tag in item.tags
+                                li= tag

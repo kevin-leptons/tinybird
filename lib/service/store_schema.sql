@@ -1,0 +1,7 @@
+DROP TABLE IF EXISTS document;
+CREATE TABLE document (
+    id CHAR(40) UNIQUE NOT NULL,
+    path VARCHAR(128) UNIQUE NOT NULL,
+    name VARCHAR(128) NOT NULL,
+    tags VARCHAR(256) NOT NULL
+);

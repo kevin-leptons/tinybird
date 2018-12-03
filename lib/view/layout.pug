@@ -1,0 +1,21 @@
+doctype 5
+html(lang='en')
+    head
+        meta(charset='utf-8')
+        meta(name='viewport' content='width=device-width, initial-scale=1.0')
+
+        title= title
+        link(rel="shortcut icon" type="image/png" href="/asset/favicon.png")
+        link(href='/core/asset/main.css', rel='stylesheet')
+        link(href='/core/asset/highlightjs.min.css', rel='stylesheet')
+        script(src='/core/asset/main.js')
+    body
+        div(class='paper-a4')
+            block body-content
+            ul(class='nav')
+                li
+                    a(href='/doc') /index
+                li
+                    a(href='/preface') /preface
+                li
+                    a(href='/help') /help

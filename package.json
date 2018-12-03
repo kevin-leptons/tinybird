@@ -1,0 +1,41 @@
+{
+  "name": "logcore",
+  "version": "0.1.0",
+  "description": "simple personal document engine",
+  "bin": {
+    "logcore": "bin/logcore.js"
+  },
+  "scripts": {
+    "test": "mocha test",
+    "start": "node bin/logcore.js serve test/example"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/kevin.leptons/logcore.git"
+  },
+  "keywords": [
+    "document",
+    "engine",
+    "personal"
+  ],
+  "author": "Kevin Leptons",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/kevin.leptons/logcore/issues"
+  },
+  "homepage": "https://gitlab.com/kevin.leptons/logcore#readme",
+  "dependencies": {
+    "dateformat": "^3.0.3",
+    "express": "^4.16.4",
+    "highlightjs": "^9.12.0",
+    "marked": "^0.5.1",
+    "pug": "^2.0.3",
+    "sha1": "^1.1.1",
+    "shelljs": "^0.8.3",
+    "sqlite3": "^4.0.4",
+    "yargs": "^12.0.4"
+  },
+  "devDependencies": {
+    "mocha": "^5.2.0"
+  }
+}
