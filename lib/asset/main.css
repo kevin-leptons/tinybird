@@ -162,6 +162,10 @@ pre {
     overflow-x: scroll;
 }
 
+/* SECTION */
+.section-anchor {
+}
+
 /*RESPONSIVE*/
 @media screen and (min-width: 900px) {
     .paper-a4 {
