@@ -7,7 +7,7 @@ const {service} = require('./lib')
 describe('class DocBuilder', () => {
     let doc_builder = service.get(DocBuilder)
 
-    it('build a document', () => {
+    it('build a document', async () => {
         let example_dir = path.join(__dirname, 'example')
         let root = path.join(example_dir, 'root')
         let doc_dir = path.join(example_dir, 'other')
@@ -19,6 +19,6 @@ describe('class DocBuilder', () => {
         doc_builder.add_many(doc_dir)
         doc_builder.add(doc_cpp)
         doc_builder.add(doc_python)
-        doc_builder.write(dest)
+        await doc_builder.write(dest)
     })
 })

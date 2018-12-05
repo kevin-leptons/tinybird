@@ -7,7 +7,7 @@
   },
   "scripts": {
     "test": "mocha test",
-    "start": "node bin/logcore.js serve test/example"
+    "start": "node bin/logcore.js serve test/example/root dest"
   },
   "repository": {
     "type": "git",
@@ -28,6 +28,7 @@
     "dateformat": "^3.0.3",
     "express": "^4.16.4",
     "highlightjs": "^9.12.0",
+    "js-yaml": "^3.12.0",
     "marked": "^0.5.1",
     "pug": "^2.0.3",
     "sha1": "^1.1.1",

@@ -13,6 +13,7 @@ describe('class ConfTable', () => {
 
     it('set()', async () => {
         await conf_table.set(key1, value1)
+        await conf_table.set(key1, value1)
         await conf_table.set(key2, value2)
     })
 
