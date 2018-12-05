@@ -1,4 +1,4 @@
-![cpp](/asset/cpp/cpp.png)
+![cpp](cpp.png)
 
 ## History
 

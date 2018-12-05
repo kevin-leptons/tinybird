@@ -1,4 +1,4 @@
-![Python](/asset/python/python.png)
+![Python](python.png)
 
 # History
 

@@ -1,4 +1,4 @@
-![logo](/asset/bash/bash.png)
+![logo](bash.png)
 
 # History
 

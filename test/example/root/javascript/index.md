@@ -1,4 +1,4 @@
-![Javascript](/asset/javascript/javascript.png)
+![Javascript](javascript.png)
 
 # History
 

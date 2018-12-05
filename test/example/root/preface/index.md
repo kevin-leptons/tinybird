@@ -1,4 +1,4 @@
-![avatar](/asset/preface/avatar.png)
+![avatar](avatar.png)
 
 # Introduction
 
