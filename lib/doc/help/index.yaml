@@ -1,5 +1,5 @@
-path: /core/help
 name: Help
 tags:
     - core
     - help
+path: core.help
