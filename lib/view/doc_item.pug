@@ -3,7 +3,7 @@ extends _layout.pug
 block body-content
     h2= item.name
     ul(class='list-inline')
-        li= item.birthtime
+        li= item.modified
     ul(class='tags')
         each tag in item.tags
             li= tag

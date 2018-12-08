@@ -9,5 +9,6 @@ CREATE TABLE document (
     id CHAR(8) PRIMARY KEY NOT NULL,
     path VARCHAR(128) UNIQUE NOT NULL,
     name VARCHAR(128) NOT NULL,
-    tags VARCHAR(256) NOT NULL
+    tags VARCHAR(256) NOT NULL,
+    modified DATETIME NOT NULL
 );

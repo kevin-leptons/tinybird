@@ -200,6 +200,11 @@ pre {
 .section-anchor {
 }
 
+/* HEADER */
+.header-index {
+    font-size: 18px;
+}
+
 /*RESPONSIVE*/
 @media screen and (min-width: 900px) {
     .paper-a4 {
