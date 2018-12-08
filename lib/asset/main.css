@@ -49,6 +49,11 @@ img {
     width: calc(100% - 16px);
     padding: 8px;
 }
+
+ul li {
+    list-style: initial;
+}
+
 .border {
     border: 2px solid var(--fg-color);
 }
@@ -159,7 +164,9 @@ img {
 
 /* CODE */
 pre {
-    overflow-x: scroll;
+    overflow-x: auto;
+    border: 1px solid var(--fg-color);
+    padding: 16px 4px;
 }
 
 /* SECTION */
