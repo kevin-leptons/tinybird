@@ -1,38 +1,23 @@
-# logcore build
+# logcore dev src dest [options]
 
-```text
-logcore build SRC DEST [OPTIONS]
-```
+* src / string. Path to document directory.
+* dest / string. Path to build directory.
+* --port, -p / integer / 8080. Port to listen.
+* --dist / boolean / false. Optimize build files.
 
-Build source documents.
+Build and serve document.
 
-Argument        | default       | Description
-----------------|---------------|---------------------------------------------
-SRC             |               | Path to directory which contains documents
-DEST            |               | Path to directory which store build files
---dist          | false         | Optimize build files for distribution
+# logcore build src dest [options]
 
-# logcore serve
+* src / string. Path to document directory.
+* dest / string. Path to build directory.
+* --dist / boolean / false. Optimize build files.
 
-```text
-logcore serve DEST [OPTIONS]
-```
+Build documents.
 
-Name            | default       | Description
-----------------|---------------|---------------------------------------------
-DEST            |               | Path to directory which contains build files
---port, -p      | 8080          | Port which is listen by web service
+# logcore serve dest [options]
 
-# logcore dev
+* dest / string. Path to build directory.
+* --port, -p / integer / 8080. Port to listen.
 
-```text
-logcore dev SRC
-```
-
-Watch source documents and build if it changes. Build file is store in
-`$HOME/logcore/$ID` where `$HOME` is home directory and `$ID` is hash of `src`.
-
-Name            | default       | Description
-----------------|---------------|---------------------------------------------
-SRC             |               | Path to directory which contains documents
---port, -p      | 8080          | Port which is listen by web service
+Serve build document on HTTP.

@@ -4,37 +4,77 @@ const os = require('os')
 
 const yargs = require('yargs')
 
-const {build_doc, App} = require('../lib')
+const {dev, build, serve} = require('../lib')
+
+const PORT = 8080
 
 yargs.
 usage('$0 <cmd> [args]').
 
-command('serve <src> <dest>', 'Build and serve document on HTTP', (yargs) => {
+command('dev <src> <dest>', 'Build and serve document', (yargs) => {
     yargs.
     option('port', {
         describe: 'Port to serve',
         alias: 'p',
         type: 'number',
-        default: 5678
+        default: PORT
+    }).
+    option('dist', {
+        describe: 'Optimize build files',
+        types: 'boolean',
+        default: false
     })
-}, (arg) => {
-    cli_serve(arg).
-    catch(e => {
-        console.error(e)
-        process.exit(1)
+}, async_cli(cli_dev)).
+
+command('build <src> <dest>', 'Build document', (yars) => {
+    yars.
+    option('dist', {
+        describe: 'Optmize build files',
+        type: 'boolean',
+        default: false
     })
-}).
+}, async_cli(cli_build)).
+
+command('serve <src> <dest>', 'Serve document', (yargs) => {
+    yargs.
+    option('port', {
+        describe: 'Port to serve',
+        alias: 'p',
+        type: 'number',
+        default: PORT
+    })
+}, async_cli(cli_serve)).
 
 strict().
 demandCommand().
 help().
 argv
 
-async function cli_serve(conf) {
-    await build_doc(conf.src, conf.dest)
-    let app = new App({
+function async_cli(async_fn) {
+    return (arg) => {
+        async_fn(arg).
+        catch(e => {
+            console.error(e)
+            process.exit(1)
+        })
+    }
+}
+
+async function cli_dev(conf) {
+    await dev(conf.src, conf.dest, {
         port: conf.port,
-        root: conf.dest,
+        dist: conf.dist
     })
-    await app.serve()
+}
+
+async function cli_build(conf) {
+    await build(conf.src, conf.dest, {
+        dist: conf.dist
+    })
+}
+
+async function cli_serve(conf) {
+    await serve(conf.dest, {
+        port: conf.port
+    })
 }

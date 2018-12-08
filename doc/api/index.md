@@ -8,28 +8,29 @@ npm install logcore
 const logcore = require('logcore')
 ```
 
-# logcore.dev(src, options)
-
-* src / String. Path to document directory.
-* options / Object.
-* options.port / Integer, String / 8080. Port which is listen by web service.
-
-Watch files in source directory. If any files has changed then re-build.
-
-# logcore.build(src, dest, options)
+# logcore.dev(src, dest, conf)
 
 * src / String. Path to document directory.
 * dest / String. Path to build directory.
-* options / Object / {}.
-* options.dist / Boolean / False. Enable optimize building for distribution.
+* conf / Object / {}.
+* conf.port / Integer, String / 8080. Port which is listen by web service.
+* conf.dist / Boolean / false. Optimize build files.
 
-Build documents in `src` and put build files into `dest` directory. Then
-document can be serve by `logcore.serve()`.
+Build and serve document.
 
-# logcore.serve(dest, options)
+# logcore.build(src, dest, conf)
 
-* dest / String. Path to build document.
-* options / Object / {}.
-* options.port / Integer / 8080. Port which is listen by web service.
+* src / String. Path to document directory.
+* dest / String. Path to build directory.
+* conf / Object / {}.
+* conf.dist / Boolean / false. Optimize build files.
+
+Build documents.
+
+# logcore.serve(dest, conf)
+
+* dest / String. Path to build directory.
+* conf / Object / {}.
+* conf.port / Integer / 8080. Port to listen.
 
 Serve build document on HTTP.
