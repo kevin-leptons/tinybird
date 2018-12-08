@@ -54,6 +54,33 @@ ul li {
     list-style: initial;
 }
 
+/* TABLE */
+table {
+    width: 100%;
+    height: auto;
+    border-spacing: 0;
+    border: 1px solid var(--fg-color);;
+}
+table caption {
+    text-align: left;
+    position: relative;
+    width: fit-content;
+    margin: 8px;
+    font-style: italic;
+}
+table th,
+table td {
+    padding: 16px 8px;
+    vertical-align: top;
+    text-align: left;
+}
+table th {
+    border: none;
+}
+table td {
+    border-top: 1px dotted var(--fg-color);
+}
+
 .border {
     border: 2px solid var(--fg-color);
 }
@@ -61,7 +88,7 @@ ul li {
 .paper-a4 {
     width: calc(100% - 16px);
     margin: auto;
-    padding: 0px;
+    padding: 0px 0px 64px 0px;
     margin: 0px 8px;
 }
 
