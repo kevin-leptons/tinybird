@@ -7,7 +7,7 @@
   },
   "scripts": {
     "test": "mocha test",
-    "start": "node bin/logcore.js serve test/example/root dest",
+    "start": "node bin/logcore.js serve test/example/root dest/test",
     "doc": "node bin/logcore.js dev doc dest/doc",
     "tutorial": "logcore dev tutorial dest/tutorial"
   },
