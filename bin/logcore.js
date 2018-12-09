@@ -23,6 +23,12 @@ command('dev <src> <dest>', 'Build and serve document', (yargs) => {
         describe: 'Optimize build files',
         types: 'boolean',
         default: false
+    }).
+    option('page-size', {
+        describe: 'Page size',
+        alias: 's',
+        type: 'number',
+        default: 16
     })
 }, async_cli(cli_dev)).
 
@@ -42,6 +48,12 @@ command('serve <dest>', 'Serve document', (yargs) => {
         alias: 'p',
         type: 'number',
         default: PORT
+    }).
+    option('page-size', {
+        describe: 'Page size',
+        alias: 's',
+        type: 'number',
+        default: 16
     })
 }, async_cli(cli_serve)).
 
@@ -63,7 +75,8 @@ function async_cli(async_fn) {
 async function cli_dev(conf) {
     await dev(conf.src, conf.dest, {
         port: conf.port,
-        dist: conf.dist
+        dist: conf.dist,
+        page_size: conf.pageSize
     })
 }
 
@@ -75,6 +88,7 @@ async function cli_build(conf) {
 
 async function cli_serve(conf) {
     await serve(conf.dest, {
-        port: conf.port
+        port: conf.port,
+        page_size: conf.pageSize
     })
 }
