@@ -12,3 +12,17 @@ block doc-result
                         ul(class='tags')
                             each tag in item.tags
                                 li= tag
+        ul(class='pagination')
+            if page.first > 0
+                li
+                    a(href= '/doc?k=' + page.keyword + '&p=' + page.first, class='left') first
+            if page.prev
+                li
+                    a(href= '/doc?k=' + page.keyword + '&p=' + page.prev, class='left') prev
+
+            li
+                a(disabled)= page.current + '/' + page.total
+                    
+            if page.next
+                li(class='right')
+                    a(href='/doc?k=' + page.keyword + '&p=' + page.next) next
