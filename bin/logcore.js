@@ -35,7 +35,7 @@ command('build <src> <dest>', 'Build document', (yars) => {
     })
 }, async_cli(cli_build)).
 
-command('serve <src> <dest>', 'Serve document', (yargs) => {
+command('serve <dest>', 'Serve document', (yargs) => {
     yargs.
     option('port', {
         describe: 'Port to serve',
