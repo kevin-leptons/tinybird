@@ -195,14 +195,20 @@ pre {
     border: 1px solid var(--fg-color);
     padding: 16px 4px;
 }
+code.inline {
+    border: 1px dotted var(--fg-color);
+    padding: 0px 4px;
+    display: inline-block;
+}
 
 /* SECTION */
 .section-anchor {
+    font-size: 125%;
 }
 
 /* HEADER */
-.header-index {
-    font-size: 18px;
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
 }
 
 /*RESPONSIVE*/
