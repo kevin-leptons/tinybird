@@ -7,7 +7,7 @@
   },
   "scripts": {
     "test": "mocha test",
-    "start": "node logcore serve doc dest/doc --port $PORT",
+    "start": "logcore serve doc dest/doc --port $PORT",
     "doc": "node bin/logcore.js dev doc dest/doc",
     "tutorial": "logcore dev tutorial dest/tutorial"
   },
