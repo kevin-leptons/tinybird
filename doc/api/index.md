@@ -15,6 +15,7 @@ const logcore = require('logcore')
 * conf / Object / {}.
 * conf.port / Integer, String / 8080. Port which is listen by web service.
 * conf.dist / Boolean / false. Optimize build files.
+* conf.page_size / Integer / 16. Number of items in a result of a query.
 
 Build and serve document.
 
@@ -32,5 +33,6 @@ Build documents.
 * dest / String. Path to build directory.
 * conf / Object / {}.
 * conf.port / Integer / 8080. Port to listen.
+* conf.page_size / Integer / 16. Number of items in a result of a query.
 
 Serve build document on HTTP.

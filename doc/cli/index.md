@@ -4,6 +4,7 @@
 * dest / string. Path to build directory.
 * --port, -p / integer / 8080. Port to listen.
 * --dist / boolean / false. Optimize build files.
+* --page-size, -s / integer / 16. Number of items in a result of a query.
 
 Build and serve document.
 
@@ -19,5 +20,6 @@ Build documents.
 
 * dest / string. Path to build directory.
 * --port, -p / integer / 8080. Port to listen.
+* --page-size, -s / integer / 16. Number of items in a result of a query.
 
 Serve build document on HTTP.
