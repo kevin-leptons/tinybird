@@ -1,4 +1,4 @@
-const {Store} = require('logcore/service')
+const {Store} = require('tinydoc/service')
 
 const {service} = require('./lib')
 

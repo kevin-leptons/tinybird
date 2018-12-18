@@ -1,14 +1,14 @@
 # Install
 
 ```bash
-npm install logcore
+npm install tinydoc
 ```
 
 ```js
-const logcore = require('logcore')
+const tinydoc = require('tinydoc')
 ```
 
-# logcore.dev(src, dest, conf)
+# tinydoc.dev(src, dest, conf)
 
 * src / String. Path to document directory.
 * dest / String. Path to build directory.
@@ -19,7 +19,7 @@ const logcore = require('logcore')
 
 Build and serve document.
 
-# logcore.build(src, dest, conf)
+# tinydoc.build(src, dest, conf)
 
 * src / String. Path to document directory.
 * dest / String. Path to build directory.
@@ -28,7 +28,7 @@ Build and serve document.
 
 Build documents.
 
-# logcore.serve(dest, conf)
+# tinydoc.serve(dest, conf)
 
 * dest / String. Path to build directory.
 * conf / Object / {}.

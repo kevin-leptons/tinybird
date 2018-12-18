@@ -1,4 +1,4 @@
-# logcore dev src dest [options]
+# tinydoc dev src dest [options]
 
 * src / string. Path to document directory.
 * dest / string. Path to build directory.
@@ -8,7 +8,7 @@
 
 Build and serve document.
 
-# logcore build src dest [options]
+# tinydoc build src dest [options]
 
 * src / string. Path to document directory.
 * dest / string. Path to build directory.
@@ -16,7 +16,7 @@ Build and serve document.
 
 Build documents.
 
-# logcore serve dest [options]
+# tinydoc serve dest [options]
 
 * dest / string. Path to build directory.
 * --port, -p / integer / 8080. Port to listen.

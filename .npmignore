@@ -1,10 +1,10 @@
-node_modules/
-doc/
-dest/
-dist/
-build/
-tmp/
-test/
+/node_modules/
+/doc/
+/dest/
+/dist/
+/build/
+/tmp/
+/test/
 .git/
 *.swp
 *.swo

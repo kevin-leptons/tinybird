@@ -1,4 +1,4 @@
-const {Service} = require('logcore/service')
+const {Service} = require('tinydoc/service')
 
 let service = new Service({
     storage_file: ':memory:'

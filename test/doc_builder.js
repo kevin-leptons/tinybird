@@ -1,6 +1,6 @@
 const path = require('path')
 
-const {DocBuilder} = require('logcore/service')
+const {DocBuilder} = require('tinydoc/service')
 
 const {service} = require('./lib')
 

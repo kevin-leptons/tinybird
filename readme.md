@@ -1,34 +1,63 @@
-# logcore
+# tinydoc
 
-Simple personal document engine.
+Simple document system engine.
 
-## Usage
+# Features
+
+* Quite simple. Markdown is document language. Command line has minimum options
+  for building and deployment.
+* Flexible. Use as a small document system, personal blog... anything, depends
+  on your imagination.
+* Indexing. There are easy to searching documents by keywords.
+* Lightweight. User Inteface runs on Web Browser, contains essential components,
+  fast loading and easy to read.
+
+# Usage
+
+Install, require pre-installed Node.js and npm.
 
 ```bash
-$ npm install logcore
-$ npm serve DIRECTORY
+npm install -g tinydoc
 ```
 
-Where DIRECTORY is directory which contains personal document. That documents
-must follow logcore format. For example.
+Create a document system, for example about Marvel.
 
-```text
-doc
-    |-bash
-    |   |-asset
-    |   |   |-logo.png
-    |   |-index.json
-    |   |-index.md
-    |-python
-    |   |-index.json
-    |   |-index.md
-    |-index.json
-    |-icon.png
+```bash
+# root directory whichs contains document system
+mkdir example
+
+# root index file, contains system information
+echo "name: Marvel Commics" > example/index.yaml
+
+# first document about about Hulk
+mkdir example/hulk
+
+# index file of a document
+cat <<EOT >> example/hulk/index.yaml
+name: Hulk
+tags:
+    - green
+    - big
+    - angry
+EOT
+
+# content of document
+cat <<EOT >> example/hulk/index.md
+# Introduction
+
+Hulk is green, big and angry guy.
+EOT
 ```
 
-File index.json.
+Build and serve documents.
 
+```bash
+tinydoc dev example dest
+```
 
-| Attribute     | Default           | Description                       |
-|---------------|-------------------|-----------------------------------|
-| name          |                   | Name of document                  |
+Open "http://localhost:8080" on Web Browser and see document system.
+
+References
+==========
+
+* Documents: https://tinydoc.herokuapp.com

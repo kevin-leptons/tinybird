@@ -1,7 +1,7 @@
 # Installation
 
 ```bash
-npm install -g logcore
+npm install -g tinydoc
 ```
 
 # Create Document
@@ -32,7 +32,7 @@ music/
 # Show Document
 
 ```bash
-logcore dev music build
+tinydoc dev music build
 ```
 
 This command does.

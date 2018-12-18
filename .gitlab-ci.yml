@@ -1,8 +1,0 @@
-image: node:10
-
-before_script:
-  - npm i
-
-test:
-  script:
-    - npm test

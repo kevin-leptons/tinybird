@@ -1,6 +1,6 @@
 const assert = require('assert')
 
-const {DocumentTable} = require('logcore/service')
+const {DocumentTable} = require('tinydoc/service')
 
 const {service} = require('./lib')
 

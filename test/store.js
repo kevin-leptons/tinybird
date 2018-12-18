@@ -2,7 +2,7 @@ const path = require('path')
 const assert = require('assert')
 
 const {service} = require('./lib')
-const {Store} = require('logcore/service')
+const {Store} = require('tinydoc/service')
 
 describe('class Store', () => {
     let store = service.get(Store)
