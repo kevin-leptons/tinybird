@@ -20,7 +20,7 @@ command('dev <src> <dest>', 'Build and serve document', (yargs) => {
         default: PORT
     }).
     option('dist', {
-        describe: 'Optimize build files',
+        describe: 'Build for distribution',
         types: 'boolean',
         default: false
     }).
@@ -35,7 +35,7 @@ command('dev <src> <dest>', 'Build and serve document', (yargs) => {
 command('build <src> <dest>', 'Build document', (yars) => {
     yars.
     option('dist', {
-        describe: 'Optmize build files',
+        describe: 'Build for distribution',
         type: 'boolean',
         default: false
     })

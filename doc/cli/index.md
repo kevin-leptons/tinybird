@@ -3,7 +3,7 @@
 * src / string. Path to document directory.
 * dest / string. Path to build directory.
 * --port, -p / integer / 8080. Port to listen.
-* --dist / boolean / false. Optimize build files.
+* --dist / boolean / false. Build for distribution.
 * --page-size, -s / integer / 16. Number of items in a result of a query.
 
 Build and serve document.
@@ -12,7 +12,7 @@ Build and serve document.
 
 * src / string. Path to document directory.
 * dest / string. Path to build directory.
-* --dist / boolean / false. Optimize build files.
+* --dist / boolean / false. Build for distribution.
 
 Build documents.
 
