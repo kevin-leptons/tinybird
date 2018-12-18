@@ -7,4 +7,6 @@ v0.2.0
 v0.3.0
 ======
 
-* Improve table of contents
+* Improve table of contents.
+* Add two attributes "organization" and "tags" to metadata of document system.
+* Make correct title for each documents.
