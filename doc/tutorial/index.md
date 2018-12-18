@@ -41,3 +41,4 @@ Follow the link which is printed to see document.
 * [Markdown References](/doc/path/core.markdown)
 * [CLI References](/doc/path/core.cli)
 * [API References](/doc/path/core.api)
+* [System Structure](/doc/path/core.system_structure)
