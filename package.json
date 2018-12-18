@@ -9,7 +9,7 @@
     "test": "mocha test",
     "start": "node bin/cli.js dev doc dest/doc --dist --port $PORT",
     "doc": "node bin/cli.js dev doc dest/doc",
-    "tutorial": "tinydoc dev tutorial dest/tutorial"
+    "tutorial": "node bin/cli.js dev doc/tutorial/example dest/tutorial"
   },
   "repository": {
     "type": "git",

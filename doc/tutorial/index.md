@@ -6,38 +6,31 @@ npm install -g tinydoc
 
 # Create Document
 
-We are going to make music document set with a document called `Jazz`.
+We are going to make document system about Marvel. It contains a document
+called `Hulk`.
+
 Let's create files below.
 
-* [music/index.yaml](example/index.yaml)
-* [music/logo.png](example/logo.png)
-* [music/jazz/index.yaml](example/jazz/index.yaml)
-* [music/jazz/index.md](example/jazz/index.md)
-* [music/jazz/fig_001.jpg](example/jazz/fig_001.jpg)
-* [music/jazz/fig_002.jpg](example/jazz/fig_002.jpg)
-
-```text
-music/
-    |-jazz
-    |   |-asset
-    |   |   |-fig_001.jpg
-    |   |   |-fig_002.jpg
-    |   |-index.yaml
-    |   |-index.md
-    |-index.yaml
-    |-logo.png
-```
-
+* marvel - A directory represents for document system which called `Marvel`.
+* [marvel/index.yaml](marvel/index.yaml) - Contains global information of
+  document system.
+* [marvel/logo.png](marvel/logo.png) - Logo file of document system.
+* marvel/hulk - A directory represents for a document called `Hulk`.
+* [marvel/hulk/index.yaml](marvel/hulk/index.yaml) - Contains local information
+  of document.
+* [marvel/hulk/index.md](marvel/hulk/index.md) - Content of document.
+* [marvel/hulk/fig_001.jpg](marvel/hulk/fig_001.png) - An image.
+* [marvel/hulk/fig_001.jpg](marvel/hulk/fig_001.png) - An other image.
 
 # Show Document
 
 ```bash
-tinydoc dev music build
+tinydoc dev marvel build
 ```
 
 This command does.
 
-* Build document in `music` directory and put build  files into `build`
+* Build document system in `marvel` directory and put results into `build`
   directory.
 * Create HTTP server and serves document.
 
