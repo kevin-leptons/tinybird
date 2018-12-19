@@ -1,4 +1,4 @@
-const {Store} = require('tinydoc/service')
+const {Store} = require('tinybird/service')
 
 const {service} = require('./lib')
 

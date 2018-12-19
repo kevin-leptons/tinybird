@@ -1,6 +1,6 @@
 const path = require('path')
 
-const {DocBuilder} = require('tinydoc/service')
+const {DocBuilder} = require('tinybird/service')
 
 const {service} = require('./lib')
 

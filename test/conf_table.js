@@ -1,6 +1,6 @@
 const assert = require('assert')
 
-const {ConfTable} = require('tinydoc/service')
+const {ConfTable} = require('tinybird/service')
 
 const {service} = require('./lib')
 

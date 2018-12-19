@@ -1,4 +1,4 @@
-# tinydoc dev src dest [options]
+# tinybird dev src dest [options]
 
 * src / string. Path to document directory.
 * dest / string. Path to build directory.
@@ -8,7 +8,7 @@
 
 Build and serve document.
 
-# tinydoc build src dest [options]
+# tinybird build src dest [options]
 
 * src / string. Path to document directory.
 * dest / string. Path to build directory.
@@ -16,7 +16,7 @@ Build and serve document.
 
 Build documents.
 
-# tinydoc serve dest [options]
+# tinybird serve dest [options]
 
 * dest / string. Path to build directory.
 * --port, -p / integer / 8080. Port to listen.

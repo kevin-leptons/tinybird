@@ -1,7 +1,7 @@
 # Installation
 
 ```bash
-npm install -g tinydoc
+npm install -g tinybird
 ```
 
 # Create Document
@@ -25,7 +25,7 @@ Let's create files below.
 # Show Document
 
 ```bash
-tinydoc dev marvel build
+tinybird dev marvel build
 ```
 
 This command does.

@@ -1,14 +1,14 @@
 # Install
 
 ```bash
-npm install tinydoc
+npm install tinybird
 ```
 
 ```js
-const tinydoc = require('tinydoc')
+const tinybird = require('tinybird')
 ```
 
-# tinydoc.dev(src, dest, conf)
+# tinybird.dev(src, dest, conf)
 
 * src / String. Path to document directory.
 * dest / String. Path to build directory.
@@ -19,7 +19,7 @@ const tinydoc = require('tinydoc')
 
 Build and serve document.
 
-# tinydoc.build(src, dest, conf)
+# tinybird.build(src, dest, conf)
 
 * src / String. Path to document directory.
 * dest / String. Path to build directory.
@@ -28,7 +28,7 @@ Build and serve document.
 
 Build documents.
 
-# tinydoc.serve(dest, conf)
+# tinybird.serve(dest, conf)
 
 * dest / String. Path to build directory.
 * conf / Object / {}.

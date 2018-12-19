@@ -1,4 +1,4 @@
-const {Service} = require('tinydoc/service')
+const {Service} = require('tinybird/service')
 
 let service = new Service({
     storage_file: ':memory:'
