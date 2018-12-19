@@ -1,4 +1,4 @@
-# tinydoc
+# tinybird
 
 Simple document system engine.
 
@@ -14,8 +14,8 @@ Simple document system engine.
 
 # Documents
 
-* Tutorial: https://tinydoc.herokuapp.com/doc/d88fc7c9
-* CLI: https://tinydoc.herokuapp.com/doc/337afa25
-* API: https://tinydoc.herokuapp.com/doc/fa72a84e
+* Tutorial: https://tinybird.herokuapp.com/doc/d88fc7c9
+* CLI: https://tinybird.herokuapp.com/doc/337afa25
+* API: https://tinybird.herokuapp.com/doc/fa72a84e
 
-More at https://tinydoc.herokuapp.com
+More at https://tinybird.herokuapp.com
