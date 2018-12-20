@@ -14,4 +14,9 @@ v0.3.0
 v0.4.0
 ======
 
-* Change project name from "tinydoc" to "tinybird"
+* Change project name from "tinydoc" to "tinybird".
+
+v0.5.0
+======
+
+* Fix load keyword from URL.
