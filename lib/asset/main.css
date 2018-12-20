@@ -97,6 +97,7 @@ hr {
     margin: auto;
     padding: 0px 0px 64px 0px;
     margin: 0px 8px;
+    word-wrap: break-word;
 }
 
 .search-box {
