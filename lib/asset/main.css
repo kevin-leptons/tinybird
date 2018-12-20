@@ -15,6 +15,7 @@
     --line-bot-width: 6px;
     --normal-font-size: 16px;
     --search-font-size: 32px;
+    --page-width: 800px;
 
     /*animation durations*/
     --tss-slow: 1s;
@@ -169,16 +170,23 @@ hr {
 /* NAV */
 .nav {
     position: fixed;
-    display: none;
+    bottom: 0px;
+    left: 0px;
+    margin: 0px;
+    padding: 8px 0px;
+    background: var(--bg-color);
+    border-top: 2px solid var(--fg-color);
+    width: 100%;
+    text-align: center;
 }
 .nav li {
     list-style: none;
+    display: inline;
 }
 .nav li a {
     font-weight: bold;
     padding: 8px;
     margin: 4px;
-    display: block;
 }
 .nav li a:hover {
     border: none;
@@ -239,13 +247,20 @@ ul.pagination li a[disabled]:hover {
 /*RESPONSIVE*/
 @media screen and (min-width: 900px) {
     .paper-a4 {
-        width: 800px;
+        width: var(--page-width);
         margin: auto;
     }
-
+}
+@media screen and (min-width: 1200px) {
     .nav {
         display: block;
-        right: calc((100% - 800px) / 4);
+        right: calc((100% - var(--page-width)) / 4);
         top: 4px;
+        left: auto;
+        width: auto;
+        border: 0px;
+    }
+    .nav li a {
+        display: block;
     }
 }
