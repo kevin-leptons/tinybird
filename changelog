@@ -22,3 +22,4 @@ v0.5.0
 * Fix load keyword from URL.
 * Improve search box on mobile.
 * Improve tutorial
+* Improve word wrap for A4 paper.
