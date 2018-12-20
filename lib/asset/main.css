@@ -100,15 +100,15 @@ hr {
 }
 
 .search-box {
-    background: red;
     margin: 8px 0px;
 }
 .search-box input[type='text'] {
-    width: 100%;
+    width: calc(100% - 20px);
     font-size: large;
     padding: 8px;
     outline: none;
     border: 2px solid var(--fg-color);
+    margin: 0px;
 }
 
 .list {
