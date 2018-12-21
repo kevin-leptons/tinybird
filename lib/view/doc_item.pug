@@ -2,9 +2,9 @@ extends _layout.pug
 
 block body-content
     h2= item.name
-    ul(class='list-inline')
+    ul(class='list-inline fade')
         li= item.modified
-    ul(class='tags')
+    ul(class='tags fade')
         each tag in item.tags
             li= tag
     div(class='line')
