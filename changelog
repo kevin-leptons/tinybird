@@ -23,3 +23,8 @@ v0.5.0
 * Improve search box on mobile.
 * Improve tutorial
 * Improve word wrap for A4 paper.
+
+v0.6.0
+======
+
+* Display time with addition timezone GMT.
