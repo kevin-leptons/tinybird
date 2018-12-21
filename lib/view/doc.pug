@@ -7,9 +7,9 @@ block doc-result
                 li
                     a(href='/doc/' + item.id)
                         h2(class='header-index')= item.name
-                        ul(class='list-inline')
+                        ul(class='list-inline fade')
                             li= item.modified
-                        ul(class='tags')
+                        ul(class='tags fade')
                             each tag in item.tags
                                 li= tag
         ul(class='pagination')
