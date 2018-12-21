@@ -1,6 +1,6 @@
 {
   "name": "tinybird",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "description": "simple document system engine",
   "bin": {
     "tinybird": "bin/cli.js"
