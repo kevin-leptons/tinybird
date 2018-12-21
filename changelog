@@ -28,3 +28,4 @@ v0.6.0
 ======
 
 * Display time with addition timezone GMT.
+* On wide screen, margin navigation bar on left.

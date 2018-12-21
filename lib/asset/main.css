@@ -260,6 +260,7 @@ ul.pagination li a[disabled]:hover {
         left: auto;
         width: auto;
         border: 0px;
+        text-align: left;
     }
     .nav li a {
         display: block;
