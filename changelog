@@ -31,3 +31,8 @@ v0.6.0
 * On wide screen, margin navigation bar on left.
 * Change logo.
 * Add fade forceground color.
+
+v0.7.0
+======
+
+* Improve code block.
